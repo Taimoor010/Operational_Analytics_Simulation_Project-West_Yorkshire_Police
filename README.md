@@ -1,4 +1,4 @@
-# Forensics Process Optimization using Simul8, Excel, and Python
+# 🧬🔍 Forensics Process Optimization using Simul8, Excel, and Python
 
 This project simulates and analyzes DNA forensics processes for West Yorkshire Police to identify the most cost-effective operational setup for delivering results within a 48-hour window. The study was part of the MANM304 Operational Analytics module at the University of Surrey (2025 cohort).
 
@@ -16,7 +16,7 @@ To model and compare different forensics process configurations using discrete-e
 - `data/` – Excel datasets exported from Simul8 (e.g. queue times, distributions)
 - `simulate_models/` – Simul8 `.s8` models for current process and 5 Rapid DNA scenarios
 - `visualizations/` – Jupyter notebook and plots for queue distributions and sensitivity analysis
-- `reports/` – Final PDF report and group presentation
+- `reports/` – Final group presentation (PDF)
 
 ## 📊 Scenarios Modeled
 Six scenarios were developed and compared:
