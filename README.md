@@ -13,23 +13,10 @@ To model and compare different forensics process configurations using discrete-e
 
 ## 📁 Project Structure
 
-forensics-optimization-simul8/  
-├── data/                     # Excel datasets created from Simul8 exports  
-│   ├── queue_times_scenario1.xlsx  
-│   └── ...  
-├── simulate_models/         # Simul8 models for all 6 scenarios  
-│   ├── current_process.s8  
-│   ├── scenario1.s8  
-│   └── ...  
-├── visualizations/          # Python analysis and plots  
-│   ├── sensitivity_analysis.ipynb  
-│   ├── queue_distributions.png  
-│   └── ...  
-├── reports/                 # Final report and presentation  
-│   ├── group_presentation.pdf  
-│   └── final_report.pdf  
-└── README.md
-
+- `data/` – Excel datasets exported from Simul8 (e.g. queue times, distributions)
+- `simulate_models/` – Simul8 `.s8` models for current process and 5 Rapid DNA scenarios
+- `visualizations/` – Jupyter notebook and plots for queue distributions and sensitivity analysis
+- `reports/` – Final PDF report and group presentation
 
 ## 📊 Scenarios Modeled
 Six scenarios were developed and compared:
