@@ -27,25 +27,35 @@ Six scenarios were developed and compared:
 5. **Rapid DNA + 24hr lab**
 6. **Full 24/7 operation (CSI + lab)**
 
-Each scenario was run for 5,000 trials to ensure convergence and reliability of results.
+Each scenario was implemented as a Simul8 model and run for **5,000 trials** to ensure statistical convergence and robustness. For every completed simulation run, detailed sample-level data was exported into Excel.
 
 ## 📈 Key Analyses
-- **Simulation Metrics**: Total time in system, queueing delays, validation bottlenecks.
-- **Queue Distributions**: Plotted for each stage using Python subplots with consistent axes.
-- **Sensitivity Analysis**: Tornado and spider plots generated from correlation and perturbation methods.
+
+- **Sample-Level Breakdown**: For each individual sample processed through the system, we recorded:
+  - Time spent in each **queue**
+  - Time spent in each **activity**
+  - **Total time in queues**, **total time in activities**, and **overall time in system**
+
+- **Simulation Metrics**: Aggregated statistics across 5,000 trials for each scenario, including min, max, mean, and 95% confidence intervals.
+
+- **Queue Distributions**: Visualized using Python (Jupyter Notebook) to assess delays at each stage. Subplots were used with consistent axes to enable comparison across scenarios.
+
+- **Sensitivity Analysis**: Conducted using both correlation-based tornado plots and parameter sweep spider plots to identify which process stages most influenced system delays.
+
 - **ROI Analysis**:
   - ROI = Arrests per £m spent
-  - ROI computed using AtRisk simulations in Excel
-  - Arrest probability modeled as a function of delay using provided objective function
+  - Calculated using **AtRisk** in Excel, with the arrest probability modeled as a function of delay using the given objective function curve
+  - Monte Carlo simulation used to estimate ROI distributions based on sample processing time variability
 
 ## 💡 Findings
-- Scenario 6 (full 24/7 CSI and lab operation) had the highest arrest potential but at the highest cost.
-- Scenario 4 and 5 offered balanced trade-offs between cost and turnaround time.
-- Queueing at the DNA sequencer and CSI availability were major bottlenecks in early scenarios.
-- Sensitivity analysis revealed that transport delays and validation times significantly impacted system performance.
+- Scenario 6 (full 24/7 CSI and lab operation) had the highest arrest potential but also the highest cost.
+- Scenario 4 and 5 offered strong cost-benefit trade-offs and consistently higher probabilities of meeting the 48-hour deadline.
+- Main delays in early scenarios were caused by the batching schedule of the DNA sequencer and limited CSI shift availability.
+- Queueing bottlenecks were clearly revealed through queue distribution plots and contributed heavily to extended processing times.
+- Sensitivity analysis confirmed that transport time, validation availability, and CSI coverage had the greatest impact on reducing total system time.
 
 ## 📌 Conclusion
-This project highlights the value of simulation in operational decision-making. Through scenario modeling and ROI analysis, we provide actionable insights into how West Yorkshire Police can optimize their forensic DNA process to balance cost, speed, and arrest likelihood.
+This project highlights the value of simulation modeling in operational analytics. By replicating realistic queue-based DNA processing systems and analyzing the effects of new technologies and scheduling strategies, we offer evidence-based recommendations for improving turnaround time and optimizing cost-effectiveness in law enforcement forensics.
 
 ## 🖥️ Requirements (for Jupyter Visualizations)
 Install dependencies with:
