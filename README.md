@@ -13,10 +13,15 @@ To model and compare different forensics process configurations using discrete-e
 
 ## 📁 Project Structure
 
-- `data/` – Excel datasets exported from Simul8 (e.g. queue times, distributions)
-- `simulate_models/` – Simul8 `.s8` models for current process and 5 Rapid DNA scenarios
-- `visualizations/` – Jupyter notebook and plots for queue distributions and sensitivity analysis
-- `reports/` – Final group presentation (PDF)
+- `Datasets_Created/` – Excel datasets exported from Simul8 simulation trials
+- `Images/` – Contains the ROI plot used in the README
+- `ROI_Analysis/` – Excel file with AtRisk-based ROI simulations for each scenario
+- `Report/` – Group presentation (PDF)
+- `Sensitivity_Analysis_Scenerio(1-5)/` – Sensitivity analysis outputs for scenarios 1 to 5
+- `Simulate_Models/` – Simul8 `.s8` files for the current and Rapid DNA scenarios
+- `Visualisations/` – Jupyter Notebook PDF for queue distributions and analysis
+- `README.md` – Project overview and documentation
+
 
 ## 📊 Scenarios Modeled
 Six scenarios were developed and compared:
