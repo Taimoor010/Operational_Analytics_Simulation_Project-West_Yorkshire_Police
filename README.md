@@ -58,9 +58,6 @@ Each scenario was implemented as a Simul8 model and run for **5,000 trials** to 
 This project highlights the value of simulation modeling in operational analytics. By replicating realistic queue-based DNA processing systems and analyzing the effects of new technologies and scheduling strategies, we offer evidence-based recommendations for improving turnaround time and optimizing cost-effectiveness in law enforcement forensics.
 
 ![ROI per Scenarios](Images/ROI_per_Scenerios.png)
-<p align="center">
-  <img src="Images/ROI_per_Scenerios.png" alt="ROI per Scenarios" width="600"/>
-</p>
 
 
 
